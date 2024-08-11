@@ -9,14 +9,10 @@ jobs:
       fail-fast: true
       matrix:
         os: [ubuntu-latest]
-        php: [7.3, 8.1, 8.2, 8.3]
-        laravel: [8.*, 9.*, 10.*, 11.*]
+        php: [8.1, 8.2, 8.3]
+        laravel: [10.*, 11.*]
         stability: [prefer-lowest, prefer-stable]
         include:
-          - laravel: 8.*
-            testbench: ^8.20
-          - laravel: 9.*
-            testbench: ^8.20
           - laravel: 10.*
             testbench: ^8.20
           - laravel: 11.*
@@ -24,12 +20,6 @@ jobs:
         exclude:
           - php: 8.1
             laravel: 11.* # Laravel 11 is not compatible with PHP 8.1
-          - php: 7.3
-            laravel: 11.*  # Laravel 11 is not compatible with PHP 7.3
-          - php: 7.3
-            laravel: 10.*  # Laravel 10 may not be compatible with PHP 7.3
-          - php: 7.3
-            laravel: 9.*  # Laravel 9 may not be compatible with PHP 7.3
 
 
     name: PHP ${{ matrix.php }} - Laravel ${{ matrix.laravel }} - Stability ${{ matrix.stability }} - OS ${{ matrix.os }}
