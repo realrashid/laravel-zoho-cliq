@@ -1,18 +1,15 @@
 # Changelog
 
-All notable changes to `Cart` will be documented in this file.
+All notable changes to `laravel-zoho-cliq` will be documented in this file.
 
-## v1.0.0 - 2024-06-16
+## [v1.0.0] - 2024-08-11
 
-### [Initial Release] - 2024-06-16
+### 🎉 Initial Release
 
-#### Added
+I am excited to announce the initial release of **Laravel Zoho Cliq**! This package integrates seamlessly with Zoho Cliq, providing an easy way to send messages and notifications from your Laravel application.
 
-- Core functionality for managing shopping carts within Laravel applications.
-- Flexible configuration options to customize cart instances with specific tax rates and other settings.
-- Support for managing multiple cart instances, each with its own configurations.
-- Intuitive API for seamless integration and interaction with the cart.
-- Tax calculation feature, allowing enabling or disabling tax calculations per cart instance.
-- Initial set of facade and service provider to integrate Cart into Laravel projects.
-- Unit tests and test cases to ensure reliability and functionality.
-- Documentation outlining installation, configuration, and usage of the Cart package.
+#### Key Features:
+- **Send Messages to Multiple Users**: Easily send messages to one or more Zoho Cliq users.
+- **Send Messages to a Single User**: Directly communicate with individual users.
+- **Send Rich Messages with Cards**: Send messages with rich content, including images and interactive elements.
+- **Send Messages to Channels**: Broadcast messages to specific Zoho Cliq channels.
