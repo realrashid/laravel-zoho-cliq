@@ -1,5 +1,5 @@
 {
-    "name": "realrashid/laravel-zoho-cliq",
+    "name": "abdavid/laravel-zoho-cliq",
     "description": "A Laravel package for integrating with Zoho Cliq, allowing you to send messages, notifications, and rich content seamlessly from your Laravel application.",
     "keywords": [
         "laravel",
@@ -30,15 +30,14 @@
     },
     "require": {
         "php": "^7.3|^8.1|^8.2|^8.3",
-        "laravel/framework": "^8.0|^9.0|^10.0|^11.0"
+        "laravel/framework": "^8.0|^9.0|^10.0|^11.0|^12.0"
     },
     "require-dev": {
-        "laravel/pint": "^1.14",
         "nunomaduro/collision": "^8.1.1||^7.10.0",
-        "orchestra/testbench": "^6.0.0||^7.0.0||^8.20||^9.0.0",
-        "pestphp/pest": "^2.35",
-        "pestphp/pest-plugin-arch": "^2.7",
-        "pestphp/pest-plugin-laravel": "^2.3"
+        "orchestra/testbench": "^6.0.0||^7.0.0||^8.20||^9.0.0||^10.0.0",
+        "pestphp/pest": "^3.8",
+        "pestphp/pest-plugin-arch": "^3.1",
+        "pestphp/pest-plugin-laravel": "^3.2"
     },
     "autoload": {
         "psr-4": {

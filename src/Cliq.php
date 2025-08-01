@@ -2,9 +2,9 @@
 
 namespace RealRashid\Cliq;
 
+use Exception;
 use Illuminate\Support\Facades\Http;
 use RuntimeException;
-use Exception;
 
 class Cliq
 {
@@ -78,7 +78,7 @@ class Cliq
      *
      * @param string $accessToken The access token to be set.
      */
-    public function setAccessToken($accessToken)
+    public function setAccessToken(string $accessToken)
     {
         $this->accessToken = $accessToken;
     }
@@ -195,7 +195,7 @@ class Cliq
      * @return array The responses from Zoho Cliq.
      * @throws RuntimeException If there's an error encoding the JSON payload.
      */
-    public function send($message)
+    public function send(string $message): array
     {
         $this->message = $message;
         $this->generateEndpoints();
@@ -242,7 +242,7 @@ class Cliq
      *                       Each button should be an associative array with keys 'label', 'hint', 'action_type', and 'web_url'.
      * @return self
      */
-    public function card(string $title, string $icon, string $thumbnail, string $theme = 'modern-inline', string $botName, array $buttons): self
+    public function card(string $title, string $icon, string $thumbnail, string $botName, array $buttons, string $theme = 'modern-inline'): self
     {
         $formattedButtons = [];
 

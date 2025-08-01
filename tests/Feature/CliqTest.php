@@ -91,7 +91,6 @@ it('sends a card message to the specified channel', function () {
             'System Alert: Critical Update',
             'https://example.com/images/system-alert-icon.png',
             'https://example.com/images/system-alert-thumbnail.png',
-            'modern-inline',
             'Alert Bot',
             [
                 [
